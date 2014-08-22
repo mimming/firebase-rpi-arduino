@@ -22,6 +22,7 @@ board.on("ready", function () {
   });
 
   var led = five.Led(13);
+  led.on();
   myFirebaseRef.child("button").on("value", function(snap) {
     if(snap.val() == "down") {
       led.on();
