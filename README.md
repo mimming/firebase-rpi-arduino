@@ -18,7 +18,6 @@ These examples probably work with other boards, but they were written with two t
 
 - [Firebase](https://www.firebase.com/) - realtime platform; the Internet part of this example
 - [Johnny Five](https://github.com/rwaldron/johnny-five#user-content-setup-and-assemble-arduino) - open source JavaScript Arduino programming framework
--
 
 
 ## What's here
@@ -42,11 +41,11 @@ Turn a potentiometer and see a number change on an LCD. You can also see the num
 Display the current Bitcoin price on an LCD. This uses the [Firebase cryptocurrency open data set](https://www.firebase.com/docs/open-data/cryptocurrencies.html).
 
 ## Running it
-0. Wire up your components to match the sample you'd like to run.
+0. Wire up your components to match the sample you'd like to run. You can use the picture above as a guide, but it's probably easier to read the pin assignments in the code comments.
 0. Install the `StandardFirmata` sketch to your Arduino per the [Johnny Five documentation](https://github.com/rwaldron/johnny-five#user-content-setup-and-assemble-arduino).
 0. Install [node.js](http://nodejs.org/), [Johnny Five](https://github.com/rwaldron/johnny-five#user-content-hey-you-heres-johnny) and [Firebase's node.js client](https://www.firebase.com/docs/web/quickstart.html) onto your Raspberry Pi.
 0. If you're running `button-led.js` or `potentiometer-lcd.js`, create a new [Firebase](https://www.firebase.com/) to store/synchronize your state. Replace `YOUR_FIREBASE` in the code with the subdomain for your Firebase.
-0. Get the JavaScript file you're interested in on to your Raspberry Pi.
+0. Copy the JavaScript code on to your Raspberry Pi.
 0. Run it:
 
         $ node btc-lcd.js
