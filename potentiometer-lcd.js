@@ -1,15 +1,11 @@
 var five = require("johnny-five");
 var Firebase = require("firebase");
 
-var board, lcd;
-
-board = new five.Board();
-var myFirebaseRef = new Firebase("https://firenoduino.firebaseio.com/potentiometer");
-
+var board = new five.Board();
+var myFirebaseRef = new Firebase("https://YOUR_FIREBASE.firebaseio.com/");
 
 board.on("ready", function() {
-
-  potentiometer = new five.Sensor({
+  var potentiometer = new five.Sensor({
     pin: "A2",
     freq: 250
   });
@@ -29,8 +25,6 @@ board.on("ready", function() {
       myFirebaseRef.set(this.value);
     }
   });
-
-
 
   var lcd = new five.LCD({
     // LCD pin name  RS  EN  DB4 DB5 DB6 DB7

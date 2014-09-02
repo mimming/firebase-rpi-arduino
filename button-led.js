@@ -2,7 +2,7 @@ var five = require("johnny-five");
 var Firebase = require("firebase");
 
 board = new five.Board();
-var myFirebaseRef = new Firebase("https://firenoduino.firebaseio.com/");
+var myFirebaseRef = new Firebase("https://YOUR_FIREBASE.firebaseio.com/");
 
 board.on("ready", function () {
   // button writes to firebase
