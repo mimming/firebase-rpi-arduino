@@ -48,4 +48,4 @@ Display the current Bitcoin price on an LCD. This uses the [Firebase cryptocurre
 0. Copy the JavaScript code on to your Raspberry Pi.
 0. Run it:
 
-        $ node btc-lcd.js
+        $ node bitcoin-price-lcd.js
